@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>Tailwind classes</title>
+  </head>
+  <body>
+    <ul class="bg-yellow-200 m-0 flex [&>*]:flex">
+      <li class="flex"><a class="p-3 hover:bg-amber-400" href="#">Home</a></li>
+      <li class="flex"><a class="p-3 hover:bg-amber-400" href="#">News</a></li>
+      <li class="flex">
+        <a class="p-3 hover:bg-amber-400" href="#">About Us</a>
+      </li>
+      <li class="flex">
+        <a class="p-3 hover:bg-amber-400" href="#">Contact Us</a>
+      </li>
+    </ul>
+    <br /><br />
+    <hr />
+    <hr />
+
+    <!-- ############### Colors ################ -->
+
+    <p class="text-pink-500">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam deleniti
+      dignissimos sint magni eum adipisci, ipsam iste earum, amet quam quis
+      velit accusamus non itaque. Rem, harum veniam! Vitae, ipsum!
+    </p>
+    <p class="text-amber-700">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo itaque
+      error, molestiae possimus ipsum laborum quidem magni veritatis! Aspernatur
+      ratione obcaecati tenetur corporis voluptatibus cupiditate, quibusdam eum
+      architecto asperiores voluptatem!
+    </p>
+    <br /><br />
+    <hr />
+    <hr />
+    <!-- ################## Margin & padding ################### -->
+
+    <h1 class="bg-gray-500 text-white p-5 m-10">Margin and Padding</h1>
+    <h2 class="bg-yellow-400 px-20 mx-5 py-5 my-5">Yaxis Xaxis</h2>
+    <h3 class="bg-red-400 pt-10">Top bottom</h3>
+    <h4 class="bg-blue-300 pl-[7px]">Pixels</h4>
+    <br /><br />
+    <hr />
+    <hr />
+
+    <!-- ################# Width ################### -->
+
+    <div class="bg-emerald-500 max-w-50 w-100">Min width Max width</div>
+    <div class="bg-violet-500 min-w-200 w-150">Min width Max width</div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ################## HEight ####################### -->
+
+    <div class="bg-amber-200 h-20 min-h-21">Minimum Height Maximum Height</div>
+    <div class="bg-amber-200 h-20 max-h-19">Minimum Height Maximum Height</div>
+    <br /><br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ################## Size ############################# -->
+
+    <div class="bg-red-950 size-1/4">Size</div>
+    <div class="bg-red-950 size-20">Size</div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ####################### Positions ################ -->
+
+    <!-- <div class="bg-pink-300 size-50 fixed bottom-0"></div> -->
+    <div class="bg-red-500 size-80 relative">
+      <div class="bg-green-500 size-20 absolute top-0 left-0"></div>
+      <div class="bg-green-500 size-20 absolute top-0 right-0"></div>
+      <div class="bg-green-500 size-20 absolute bottom-0 left-0"></div>
+      <div class="bg-green-500 size-20 absolute inset-25"></div>
+    </div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- #################### Container ##########################  -->
+
+    <div class="text-2xl bg-orange-500 container mx-auto">Container Class</div>
+
+    <hr />
+    <hr />
+    <br /><br />
+
+    <!-- ################### Background #####################  -->
+
+    <div class="bg-[url('bg2.jpg')] bg-cover bg-center">Al Noor</div>
+    <div
+      class="gradient bg-gradient-to-tr to-orange-400 from-pink-300 ml-50 size-50"
+    ></div>
+    <div
+      class="gradient bg-gradient-to-t to-yellow-300 from-green-300 size-90"
+    ></div>
+    <div class="size-60 ml-32 shadow-pink-400 shadow-2xl shadow-inner"></div>
+    <br /><br /><br />
+    <hr />
+
+    <!-- ##################### Filter ##################  -->
+    <div class="relative">
+      <img class="blur-sm" src="bg2.jpg" alt="" />
+      <img class="brightness-50 absolute right-0" src="bg2.jpg" alt="" />
+      <img class="contrast-150" src="bg2.jpg" alt="" />
+      <img class="invert-75 absolute top-0 right-0" src="bg2.jpg" alt="" />
+      <img
+        class="hue-rotate-30 absolute top-40 left-100"
+        src="bg2.jpg"
+        alt=""
+      />
+    </div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- #################### Interactivity ##################  -->
+
+    <button
+      class="bg-fuchsia-400 rounded-md p-1 m-5 hover:bg-blue-500 hover:p-5"
+    >
+      Login
+    </button>
+    <button class="bg-blue-400 p-2 m-5 focus:bg-yellow-700">Login</button>
+    <button class="bg-red-500 p-2 m-5 active:bg-yellow-700">Login</button>
+    <div>
+      <a class="group" href="">
+        <h1 class="group-hover:bg-pink-500">click here</h1>
+        <p class="group-hover:bg-blue-500">button</p>
+      </a>
+    </div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ################### Media qyeries & break point ##################### -->
+
+    <div
+      class="bg-red-500 w-300 h-100 lg:bg-green-400 md:bg-blue-400 sm:bg-amber-400 md:text-center"
+    >
+      Media queries and break point
+    </div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+    <!-- ################### Coloumns ################  -->
+
+    <div class="columns-2 md:columns-5">
+      <h1 class="bg-red-500">heading 1</h1>
+      <h1 class="bg-green-500">heading 2</h1>
+      <h1 class="bg-yellow-500">heading 3</h1>
+      <img src="bg2.jpg" alt="" />
+      <img src="bg2.jpg" alt="" />
+      <img src="bg2.jpg" alt="" />
+    </div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ################### Flex #######################  -->
+
+    <div class="bg-gray-400 size-100 flex items-center justify-around">
+      <div class="bg-red-300 size-15"></div>
+      <div class="bg-blue-300 size-15"></div>
+      <div class="bg-green-300 size-15"></div>
+      <div class="bg-yellow-300 size-15"></div>
+    </div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ####################### GRid #########################  -->
+
+    <div class="grid grid-cols-2">
+      <div class="bg-yellow-300 col-span-2 p-10 border border-red-400"></div>
+      <div class="bg-yellow-300 p-10 border border-red-400"></div>
+      <div class="bg-yellow-300 row-span-2 p-10 border border-red-400"></div>
+      <div class="bg-yellow-300 p-10 border border-red-400"></div>
+      <div class="bg-yellow-300 p-10 border border-red-400"></div>
+      <div class="bg-yellow-300 p-10 border border-red-400"></div>
+      <div class="bg-yellow-300 p-10 border border-red-400"></div>
+      <div class="bg-yellow-300 p-10 border border-red-400"></div>
+    </div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ####################### Transition ######################  -->
+
+    <button
+      class="bg-gray-400 p-2 m-20 rounded-xl hover:bg-gray-700 transition-all duration-700 ease-in-out"
+    >
+      Transition
+    </button>
+
+    <button
+      class="bg-gray-400 p-2 m-20 rounded-xl hover:opacity-20 transition-all duration-700 ease-in-out"
+    >
+      Opacity
+    </button>
+    <button
+      class="bg-gray-400 p-2 m-20 rounded-xl hover:scale-150 transition-all duration-700 ease-in-out"
+    >
+      Scale
+    </button>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- #################### Animation ########################  -->
+
+    <div class="bg-emerald-700 rounded-full size-10 m-10 animate-ping"></div>
+    <div class="bg-emerald-700 rounded-full size-10 m-10 animate-bounce"></div>
+    <img src="spin.jpg" class="w-50 h-auto m-auto animate-spin" alt="" />
+  </body>
+</html>
