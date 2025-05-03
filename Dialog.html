@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Dialog Box</title>
+  </head>
+  <body>
+    <div class="bg-gray-400 fixed inset-0"></div>
+    <div class="fixed inset-0">
+      <div class="flex h-full justify-center items-center">
+        <div class="bg-white w-[512px] text-left shadow-xl rounded relative">
+          <div class="p-5">
+            <div class="flex items-start">
+              <img class="w-8" src="error.png" alt="" />
+              <div class="ml-4">
+                <h3 class="text-gray-700 font-bold">Deactivate Account</h3>
+                <div class="m-2">
+                  <p class="text-sm text-gray-600">
+                    I would like to request the deactivation of my account.
+                    Please remove my personal information and discontinue any
+                    associated services. I appreciate your assistance and
+                    support during my time using your platform.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-100 font-semibold px-4 py-3 flex flex-row-reverse"
+          >
+            <button
+              class="bg-red-500 font-semibold text-white ml-3 p-1 rounded hover:bg-red-400"
+            >
+              Deactivate
+            </button>
+            <button
+              class="bg-white ml-3 shadow-sm ring-1 ring-inset p-1 rounded hover:bg-red-300"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

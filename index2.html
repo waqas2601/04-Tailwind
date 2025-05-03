@@ -7,8 +7,90 @@
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body>
+    <div class="bg-blue-600 text-4xl h-20 lg:bg-violet-600 md:bg-amber-400">
+      <h1>Breakpoints</h1>
+      <h1>Breakpoints</h1>
+    </div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ################ Margin, padding and spacing ################  -->
+    <div class="p-wrapper bg-gray-300 h-50">
+      <div class="bg-blue-400 p-2 m-2">Custom padding in tailwind</div>
+      <div class="bg-green-300 p-2 m-2">Custom padding in tailwind</div>
+      <div class="bg-red-400 p-2 m-2">Custom padding in tailwind</div>
+    </div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ################# Directives (Style.css) ######################  -->
+
+    <h1>Hello 1</h1>
+
+    <button class="btn-primary">Login</button>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ##################### Borders #####################  -->
+
     <div
-      class="bg-blue-600 text-4xl h-20 lg:bg-violet-600 md:bg-amber-400"
-    ></div>
+      class="w-96 m-10 p-4 border-4 border-t-green-600 border-b-red-600 border-r-blue-600 border-l-amber-600"
+    >
+      Border
+    </div>
+    <div
+      class="size-32 m-10 p-4 border-4 rounded-2xl border-t-green-600 border-b-red-600 border-r-blue-600 border-l-amber-600"
+    >
+      Border
+    </div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ####################### fONTS #############################  -->
+
+    <p class="font-sans m-10">Fonts</p>
+    <p class="font-serif font-bold">Fonts</p>
+    <p class="text-[100px]">Fonts size</p>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ################ Photo gallery #######################  -->
+
+    <div class="container mx-auto mt-10 flex flex-wrap gap-2">
+      <img
+        class="w-80 hover:scale-110 transition-all duration-500 hover:brightness-125"
+        src="shampoo.jpg"
+        alt=""
+      />
+      <img class="w-80" src="shampoo.jpg" alt="" />
+      <img class="w-80" src="shampoo.jpg" alt="" />
+      <img class="w-80" src="shampoo.jpg" alt="" />
+    </div>
+    <br /><br /><br />
+    <hr />
+    <hr />
+
+    <!-- ################### Dropdown without JS #######################  -->
+
+    <div class="group m-20">
+      <div
+        class="text-amber-900 font-bold hover:text-blue-300 cursor-pointer transition"
+      >
+        Products
+      </div>
+      <div class="hidden group-hover:block bg-gray-400 w-30">
+        <ul>
+          <li><a href="">Shampoo</a></li>
+          <li><a href="">Oil</a></li>
+          <li><a href="">Soap</a></li>
+          <li><a href="">Cream</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
